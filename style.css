@@ -1,0 +1,959 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+
+}
+
+#first {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* side menu bar .............................*/
+#first .wrapper {}
+
+#closebutton {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #363535;
+    border-radius: 50px;
+}
+
+#first .wrapper .sidebar {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 400px;
+    background-color: #fff;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollbar {
+    overflow: auto;
+    padding-bottom: 80px;
+}
+
+#first .wrapper .sidebar .closebutton {
+    display: flex;
+    flex-direction: row;
+}
+
+#first .wrapper .sidebar .closebutton a {
+    text-decoration: none;
+    color: #000;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-left: 38px;
+}
+
+#first .wrapper .sidebar .closebutton h2 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 20px;
+    font-family: poppins;
+}
+
+#first .wrapper .sidebar .category {}
+
+#first .wrapper .sidebar .category ul {}
+
+#first .wrapper .sidebar .category ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#first .wrapper .sidebar .category ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: poppins;
+    cursor: pointer;
+}
+
+#first .wrapper .sidebar .category ul li a .men-cat {
+    width: 20px;
+    padding-left: 250px;
+}
+
+#first .wrapper .sidebar .category ul li a .women-cat {
+    width: 20px;
+    padding-left: 220px;
+}
+
+#first .wrapper .sidebar .category ul li a .jewellary-cat {
+    width: 20px;
+    padding-left: 210px;
+}
+
+#first .wrapper .sidebar .category ul li a .watches-cat {
+    width: 20px;
+    padding-left: 214px;
+}
+
+#first .wrapper .sidebar .category ul li a .watches-cat {
+    width: 20px;
+    padding-left: 214px;
+}
+
+#first .wrapper .sidebar .category ul li a .perfumes-cat {
+    width: 20px;
+    padding-left: 208px;
+}
+
+#first .wrapper .sidebar .category ul li a .art-of-living-cat {
+    width: 20px;
+    padding-left: 194px;
+}
+
+#first .wrapper .sidebar .category ul li a .services-cat {
+    width: 20px;
+    padding-left: 214px;
+}
+
+#first .wrapper .sidebar .category ul li a .louis-cat {
+    width: 20px;
+    padding-left: 84px;
+}
+
+#first .wrapper .sidebar .category hr {
+    color: darkslategray;
+    font-weight: 100;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#first .wrapper .sidebar .details {}
+
+#first .wrapper .sidebar .details ul {}
+
+#first .wrapper .sidebar .details ul li {
+    list-style: none;
+    padding-top: 20px;
+}
+
+#first .wrapper .sidebar .details ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+#first .wrapper .sidebar .accessibility {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#first .wrapper .sidebar .accessibility a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-left: 40px;
+
+}
+
+#first .wrapper .sidebar .accessibility button {
+    background-color: #7a7777;
+    border-radius: 20px;
+    border: 2px solid rgb(125, 121, 121);
+    width: 40px;
+    height: 25px;
+    margin-left: 106px;
+    margin-top: 30px;
+
+}
+
+#first .wrapper .sidebar .accessibility button i {
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0px solid #fff;
+    font-size: 16px;
+    outline: none;
+    margin-right: 30px;
+}
+
+.scrollbar .cateory li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.scrollbar .category li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #000;
+    width: 0;
+    left: 50%;
+    top: 100%;
+    height: 2px;
+    transition-duration: 0.5s;
+}
+
+.category li:hover::before {
+    width: 80px;
+}
+
+/* navbar............................. */
+.nav-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: transparent;
+    color: white;
+    z-index: 1;
+}
+
+.bgcolor {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.bgcolor * {
+    color: #000 !important;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-bar .first-row {
+    padding: 35px 10px 0;
+    display: flex;
+}
+
+.nav-bar .first-row a {
+    width: 16px;
+    margin: 5px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-family: poppins;
+}
+
+/* .nav-bar .first-row .menu-icon{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+} */
+.nav-bar .second-row {}
+
+.nav-bar .second-row h1 {
+    font-family: poppins;
+    font-size: 30px;
+    color: #fff;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-bar .third-row {
+    padding: 35px 20px 0 0;
+}
+
+.nav-bar .third-row a {
+    width: 16px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: poppins;
+}
+
+.nav-bar:hover {
+    background-color: #fff;
+}
+
+.nav-bar:hover a {
+    color: #000;
+}
+
+.nav-bar:hover h1 {
+    color: #000;
+}
+
+
+/*responsive css code for navbar*/
+@media(max-width:760px) {
+    #menu-text {
+        display: none;
+    }
+
+    #menuopen a {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    .search-icon {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .second-row h1 {
+        padding-left: 20px;
+        font-weight: 200;
+        margin-bottom: 10px;
+    }
+
+    #call-us {
+        display: none;
+    }
+
+    #wishlist {
+        display: none;
+    }
+
+    #profile {
+        font-size: 25px;
+    }
+
+    .spotlight {
+        width: 100vw;
+    }
+
+    .spotlight .content h1 {
+        font-weight: 400;
+    }
+
+    .spotlight .content a button {
+        font-weight: 400;
+    }
+}
+
+@media(max-width:480px) {
+    .nav-bar .first-row {
+        padding-top: 16px;
+    }
+
+    .nav-bar .second-row h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #search-ico {
+        display: block;
+    }
+
+    .search-icon {
+        margin-top: 0px;
+    }
+
+    .nav-bar .third-row {
+        padding-top: 16px;
+    }
+}
+
+@media(max-width:360px) {
+
+    .nav-bar .second-row h1 {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .menu-ico {
+        font-size: 20px;
+    }
+
+    #search-ico {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    #profile {
+        font-size: 18px;
+    }
+
+    .third-row {
+        margin-top: 8px;
+    }
+
+}
+
+/*
+.search-container {
+    position: relative;
+    display: inline-block;
+    padding-top: 80px;
+}
+
+.search-key {
+    padding-left: 30px; 
+    box-sizing: border-box;
+    margin-left: 20px;
+    width: 90vw;
+    height: 10vh;
+    border-radius: 50px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: #070707 !important; 
+} */
+/* .search-icon *{
+    color: #070707 !important;
+} */
+
+/*.......search-key......*/
+.second-row .input-box {
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.second-row .input-box input {
+    border-radius: 20px;
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.second-row .input-box .inputitem {
+    position: absolute;
+
+}
+
+.second-row .input-box .inputitem svg {}
+
+@media (max-width:760px) {
+    .search-key {
+        display: block;
+    }
+
+    .search-key-input .inputitem input {
+        width: 300px;
+        margin-right: 50px;
+    }
+
+}
+
+/**********search key.........*/
+
+/* .spotlight*/
+.spotlight {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    padding-top: 360px;
+}
+
+.content h1 {
+    font-family: poppins;
+}
+
+.content button {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: 2px solid #fff;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+    font-weight: bold;
+    font-family: poppins;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media(max-width:480px) {
+    .content h1 {
+        font-size: 16px;
+    }
+
+    .content button a {
+        font-size: 8px;
+    }
+}
+
+/* section first end*/
+
+/*  section-second.................*/
+
+/*.................normal css....................*/
+#second {
+    width: 100vw;
+    height: 90vh;
+}
+
+#second .column-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+#second .column-content .column {
+    font-family: poppins;
+}
+
+#second .column-content .column h2 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.pluse {
+    display: none;
+}
+
+#second .column-content .column a {
+    text-decoration: none;
+    color: #000;
+}
+
+#second .column-content .column p {
+    font-size: 12px;
+    font-weight: 350;
+    padding-top: 16px;
+}
+
+#second .column-content .column span {
+    text-decoration: underline;
+}
+
+.downline {
+    display: none;
+}
+
+/*......................responsive css.........*/
+@media(max-width: 760px) {
+    #second .column-content {
+        display: block;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .column {
+        display: block;
+        /* width: 60vw; */
+    }
+
+    .column h2 {}
+
+    .column .heading .pluse {
+        display: block;
+        float: right;
+        cursor: pointer;
+        margin-right: 50px;
+        /* color: #000; */
+    }
+
+    .column .list {
+        display: none;
+    }
+
+    .column .list a {
+        line-height: 5px;
+    }
+
+    .list.show {
+        display: block;
+    }
+
+    #second .column hr {}
+
+    .downline {
+        display: block;
+        width: 85vw;
+        margin-right: 120px;
+    }
+}
+
+@media(max-width: 480px) {
+    .downline {
+        width: 75vw;
+    }
+}
+
+/*............second section.............*/
+
+/*.............third section..............*/
+#third {
+    width: 100vw;
+    height: 70vh;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#third .footer {
+    width: 88%;
+    height: 100%;
+}
+
+#third .footer .upper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#third .footer .upper .flag {
+    display: flex;
+}
+
+#third .upper .flag img {
+    padding-top: 15px;
+    height: 16px;
+    width: 18px;
+}
+
+#third .upper .flag p {
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 10px;
+    text-decoration: underline;
+    padding-top: 5px;
+}
+
+#third .upper .flag p a {
+    cursor: pointer;
+    color: #000;
+}
+
+#third .upper .privacy {
+    display: flex;
+}
+
+#third .upper .privacy p {
+    padding: 10px 0 0 25px;
+    font-size: 12px;
+}
+
+#third .upper .privacy p a {
+    cursor: pointer;
+    color: #000;
+}
+
+.middle {
+    display: flex;
+}
+
+#third .middle .box-one h3 {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#third .middle .box-one p {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+#third .middle .box-two {
+    margin-left: 16vw;
+}
+
+#third .middle .box-two h3 {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#third .middle .box-two p {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+#third .lower {
+    justify-content: center;
+    text-align: center;
+}
+
+#third .lower h4 {
+    font-size: 25px;
+}
+
+hr {
+    margin-top: 30px;
+    color: darkgray;
+}
+
+/*responsive css for footer*/
+@media(max-width:760px) {
+    .upper {
+        flex-direction: column-reverse;
+    }
+
+    .upper a {
+        text-decoration: none;
+    }
+
+    .middle {
+        flex-wrap: wrap;
+    }
+
+    .middle .box-two {
+        float: right;
+        margin-right: 30px;
+    }
+
+    #third .middle .box-two {
+        margin-left: 0vw;
+    }
+}
+
+/*.....explore section..*/
+/*normal css*/
+/*#explore {
+    width: 100vw;
+    padding-top: 50px;
+}
+
+#explore h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+
+#explore .things {
+    padding-left: 80px;
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+#explore .things .women-men-things {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#explore .things .women-men-things .things-img {
+    width: 260px;
+    height: 360px;
+}
+
+#explore .things .women-men-things h3 {
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+
+#explore .things .women-men-things a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*responsive css for section explore*/
+/*@media(max-width:1440px) {
+    #explore .things {
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (min-width:768px)and (max-width:980px) {
+    #explore .things {
+        padding-left: 100px;
+    }
+
+    #explore .things .women-men-things .things-img {
+        width: 180px;
+        height: 250px;
+    }
+
+    #explore .things .women-men-things h3 {
+        font-weight: 300;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media(max-width:640px) {
+    #explore h2 {
+        font-size: 14px;
+    }
+    #explore .things {
+        padding-left:120px;
+    }
+
+    #explore .things .women-men-things .things-img {
+        width: 160px;
+        height: 200px;
+        padding-right: 40px;
+    }
+
+    #explore .things .women-men-things h3 {
+        font-weight: 500;
+        font-size: 10px;
+        margin-right: 40px;
+
+    }
+}
+
+@media(max-width:480px) {
+    #explore h2 {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:360px) {
+    #explore h2 {
+        font-size: 14px;
+    }
+
+    #explore .things .women-men-things .things-img {
+        width: 160px;
+        height: 200px;
+        padding-right: 40px;
+    }
+
+    #explore .things .women-men-things h3 {
+        font-weight: bold;
+        font-size: 10px;
+        margin-right: 32px;
+
+    }
+
+}
+*/
+#explore {
+    width: 100vw;
+    padding-top: 50px;
+}
+
+#explore h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+
+#explore .things {
+    padding-left:60px;
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+#explore .things .women-men-things {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1 1 calc(25% - 2rem);
+    box-sizing: border-box;
+}
+
+#explore .things .women-men-things .things-img {
+    width: 100%;
+    height: auto;
+}
+
+#explore .things .women-men-things h3 {
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+
+#explore .things .women-men-things a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Responsive CSS for section explore */
+
+@media (max-width: 1200px) {
+    #explore .things .women-men-things {
+        flex: 1 1 calc(25% - 2rem);
+    }
+}
+
+@media (max-width: 992px) {
+    #explore .things .women-men-things {
+        flex: 1 1 calc(33.333% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    #explore .things {
+        padding-left: 30px;
+    }
+
+    #explore .things .women-men-things {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 640px) {
+    #explore h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #explore .things {
+        padding-left: 20px;
+    }
+
+    #explore h2 {
+        font-size: 16px;
+    }
+
+    #explore .things .women-men-things {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 360px) {
+    #explore h2 {
+        font-size: 12px;
+    }
+    #explore .things .women-men-things h3{
+        font-size: 10px;
+        font-weight:400;
+    }
+}
