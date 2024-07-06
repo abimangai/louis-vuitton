@@ -371,6 +371,13 @@ body {
     }
 }
 
+@media(max-width:388px) {
+    .nav-bar .second-row h1 {
+        font-size:16px;
+        margin-top: 20px;
+    }
+}
+
 @media(max-width:360px) {
 
     .nav-bar .second-row h1 {
@@ -743,123 +750,7 @@ hr {
         margin-left: 0vw;
     }
 }
-
-/*.....explore section..*/
-/*normal css*/
-/*#explore {
-    width: 100vw;
-    padding-top: 50px;
-}
-
-#explore h2 {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-    font-weight: 500;
-}
-
-#explore .things {
-    padding-left: 80px;
-    display: flex;
-    gap: 1rem;
-    width: 90%;
-    flex-wrap: wrap;
-}
-
-#explore .things .women-men-things {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-#explore .things .women-men-things .things-img {
-    width: 260px;
-    height: 360px;
-}
-
-#explore .things .women-men-things h3 {
-    font-weight: 300;
-    font-size: 14px;
-    text-align: center;
-}
-
-#explore .things .women-men-things a {
-    text-decoration: none;
-    color: #000;
-}
-
-/*responsive css for section explore*/
-/*@media(max-width:1440px) {
-    #explore .things {
-        padding-left: 100px;
-    }
-}
-
-@media only screen and (min-width:768px)and (max-width:980px) {
-    #explore .things {
-        padding-left: 100px;
-    }
-
-    #explore .things .women-men-things .things-img {
-        width: 180px;
-        height: 250px;
-    }
-
-    #explore .things .women-men-things h3 {
-        font-weight: 300;
-        font-size: 10px;
-        text-align: center;
-    }
-}
-
-@media(max-width:640px) {
-    #explore h2 {
-        font-size: 14px;
-    }
-    #explore .things {
-        padding-left:120px;
-    }
-
-    #explore .things .women-men-things .things-img {
-        width: 160px;
-        height: 200px;
-        padding-right: 40px;
-    }
-
-    #explore .things .women-men-things h3 {
-        font-weight: 500;
-        font-size: 10px;
-        margin-right: 40px;
-
-    }
-}
-
-@media(max-width:480px) {
-    #explore h2 {
-        font-size: 14px;
-    }
-}
-
-@media(max-width:360px) {
-    #explore h2 {
-        font-size: 14px;
-    }
-
-    #explore .things .women-men-things .things-img {
-        width: 160px;
-        height: 200px;
-        padding-right: 40px;
-    }
-
-    #explore .things .women-men-things h3 {
-        font-weight: bold;
-        font-size: 10px;
-        margin-right: 32px;
-
-    }
-
-}
-*/
+/*explore*/
 #explore {
     width: 100vw;
     padding-top: 50px;
@@ -931,6 +822,12 @@ hr {
 @media (max-width: 640px) {
     #explore h2 {
         font-size: 18px;
+    }
+}
+@media (max-width: 488px){
+    #explore .things .women-men-things h3{
+        font-size:10px;
+        font-weight:400;
     }
 }
 
